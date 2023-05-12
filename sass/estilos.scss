@@ -1,22 +1,22 @@
 // Variables
 $body-font: "Open Sans",
-"sans-serif";
+    "sans-serif";
 $header-bg: #000;
 $header-text: #fff;
 $redes-color: #fff;
 $redes-hover-gradient: linear-gradient(to right bottom,
-#d16ba5,
-#c777b9,
-#ba83ca,
-#aa8fd8,
-#9a9ae1,
-#8aa7ec,
-#79b3f4,
-#69bff8,
-#52cffe,
-#41dfff,
-#46eefa,
-#5ffbf1);
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1);
 
 // Mixins
 @mixin hover-gradient {
@@ -27,7 +27,7 @@ $redes-hover-gradient: linear-gradient(to right bottom,
     -webkit-background-clip: text;
 }
 
-@mixin shops ( $position , $repeat ) {
+@mixin shops ($position , $repeat ) {
     background-position: $position;
     background-repeat: $repeat;
 }
@@ -168,364 +168,177 @@ span .fa-solid {
 }
 
 .mainhome1 {
-    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    height: auto;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 15px;
+    width: auto;
 
-    .image:hover {
-        scale: 1.01;
-    }
+    div {
+        flex: 1 0 calc(50% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .image13 {
-        background-image: url(./img/gonmskback.png);
-        @include shops( center , no-repeat );
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            background-position: contain;
+            background-size: cover;
+        }
 
-    .image14 {
-        background-image: url(./img/pizzabacknegra.png);
-        @include shops( center , no-repeat );
-    }
+        img:hover {
+            scale: 1.01;
+        }
 
-    .image15 {
-        background-image: url(./img/gonmsk.png);
-        @include shops( center , no-repeat );
+        p {
+            text-align: center;
+        }
     }
 }
 
 .mainhome2 {
-    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    height: auto;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 15px;
+    width: auto;
 
-    .image:hover {
-        scale: 1.01;
-    }
+    div {
+        flex: 1 0 calc(50% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .image16 {
-        background-image: url(./img/merygonperfiles.png);
-        @include shops( center , no-repeat );
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-    .image17 {
-        background-image: url(./img/merygonperfilesback.png);
-        @include shops( center , no-repeat );
-    }
+        img:hover {
+            scale: 1.01;
+        }
 
-    .image18 {
-        background-image: url(./img/pizzabacknegra.png);
-        @include shops( center, no-repeat );
-    }
-
-    .image19 {
-        background-image: url(./img/pizzafrontnegra.png);
-        @include shops( center, no-repeat );
-    }
-}
-
-.mainhome3 {
-    width: 96%;
-    margin-left: 2%;
-    margin-right: 2%;
-    height: auto;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 15px;
-
-    .image:hover {
-        scale: 1.01;
-    }
-
-    .image20 {
-        background-image: url(./img/classicbackblanca.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image21 {
-        background-image: url(./img/calidreaming.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image22 {
-        background-image: url(./img/classicfrontblanca.png);
-        @include shops( center , no-repeat );
+        p {
+            text-align: center;
+        }
     }
 }
 
 /* SHOP */
+
 .mainshop {
-    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    height: auto;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 15px;
+    width: auto;
 
-    .image:hover {
-        scale: 1.01;
-    }
+    div {
+        flex: 1 0 calc(33.33% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .image {
-        width: 100%;
-        background-color: black;
-        background-size: cover;
-        background-position: center;
-        display: grid;
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-    .image1 {
-        background-image: url(./img/merybacksola.png);
-        @include shops( center , no-repeat );
-    }
+        img:hover {
+            scale: 1.01;
+        }
 
-    .image2 {
-        background-image: url(./img/semaforo.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image3 {
-        background-image: url(./img/chiomerybueno.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image4 {
-        background-image: url(./img/humbolt.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image5 {
-        background-image: url(./img/riolosang.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image6 {
-        background-image: url(./img/nachoperfil.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image7 {
-        background-image: url(./img/merygonzfrontal.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image8 {
-        background-image: url(./img/meryfront.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image9 {
-        background-image: url(./img/gonperfil.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image10 {
-        background-image: url(./img/venicewhiteback.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image11 {
-        background-image: url(./img/knickstriptico.png);
-        @include shops( center , no-repeat );
-    }
-
-    .image12 {
-        background-image: url(./img/nachovenice.png);
-        @include shops( center , no-repeat );
+        p {
+            text-align: center;
+        }
     }
 }
 
 /* WOMEN/MEN */
-.mainwear {
-    width: 96%;
+
+.mainwomen {
+    display: flex;
+    flex-wrap: wrap;
+    height: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    height: auto;
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 15px;
-    background-size: cover;
+    width: auto;
 
-    .image {
-        width: 100%;
-        background-color: black;
-        background-size: cover;
-        background-position: center;
-        display: grid;
-    }
+    div {
+        flex: 1 0 calc(33.33% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .image23 {
-        background-image: url(./img/pizzanegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
 
-    .image23:hover {
-        background-image: url(./img/pizzablancabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
+        img:hover {
+            scale: 1.01;
+        }
 
-    .image24 {
-        background-image: url(./img/pizzanegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
+        .model {
+            font-size: 20px;
+        }
 
-    .image24:hover {
-        background-image: url(./img/pizzanegrabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image25 {
-        background-image: url(./img/nncblancafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image25:hover {
-        background-image: url(./img/nncblancabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image26 {
-        background-image: url(./img/totepizzaprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image27 {
-        background-image: url(./img/nncnegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image27:hover {
-        background-image: url(./img/nncnegrabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image28 {
-        background-image: url(./img/totesnake.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image29 {
-        background-image: url(./img/skullnegraprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image29:hover {
-        background-image: url(./img/skullblancaprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image30 {
-        background-image: url(./img/helmetblancafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image30:hover {
-        background-image: url(./img/helmetblancabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image31 {
-        background-image: url(./img/helmetnegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image31:hover {
-        background-image: url(./img/helmetnegrabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image32 {
-        background-image: url(./img/knicksnegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image32:hover {
-        background-image: url(./img/knicksnegrabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image33 {
-        background-image: url(./img/knicksblancafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image33:hover {
-        background-image: url(./img/knicksblancabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image34 {
-        background-image: url(./img/snakenegrafrontprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
-    }
-
-    .image34:hover {
-        background-image: url(./img/snakenegrabackprecio.png);
-        @include shops( center , no-repeat );
-        width: auto;
-        height: 600px;
+        .price {
+            text-align: center;
+            color: #4f4f4f;
+            font-size: 15px;
+        }
     }
 }
 
+.mainmen {
+    display: flex;
+    flex-wrap: wrap;
+    height: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: auto;
+
+    div {
+        flex: 1 0 calc(33.33% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        img:hover {
+            scale: 1.01;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #4f4f4f;
+            font-size: 15px;
+        }
+    }
+}
 
 /* CONTACTO */
 
@@ -603,6 +416,7 @@ span .fa-solid {
 }
 
 /* FOOTER */
+
 footer {
     width: 100%;
     height: auto;
